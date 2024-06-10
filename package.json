@@ -2,10 +2,10 @@
   "name": "fastify-starter",
   "version": "1.0.0",
   "description": "A starter pack for building a Fastify web application with TypeScript, including pre-configured ESLint, Prettier, and Nodemon.",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/server.js",
     "dev": "npx nodemon src/server.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write ."
