@@ -1,9 +1,9 @@
 import fastify, { FastifyInstance } from 'fastify';
+import { homeRoute } from './routes/homeRoute';
+
 const app: FastifyInstance = fastify();
 
-app.get('/', async function handler(request, reply) {
-  return { hello: 'world' };
-});
+app.register(homeRoute);
 
 app.listen({ port: 3000 }, (err, address) => {
   if (err) {
